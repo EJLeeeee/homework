@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>마실커피</title>
+        <title>메인</title>
 
         <!-- reset cdn -->
         <link
@@ -58,7 +58,9 @@
             .one {
                 position: sticky;
                 top: 0;
+
             }
+
             /* 서브메뉴 전체다운 */
             /* 2단 기본박스 */
             #nav_wrap {
@@ -128,8 +130,67 @@
             .one > .gnb > .menu > li > .submenu > li > a:hover {
                 color: yellow;
             }
+            .animation {
+            width: 100%;
+            height: 660px;
+            margin-top: 60px;
+            
+        }
+            .animation1>ul{
+               
 
-          
+        }
+            .animation>ul{
+            flex-grow: 1;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            position: absolute;
+            animation-name: moving1;
+            animation-duration: 40s;
+            animation-direction: normal;
+            animation-iteration-count:infinite;
+            animation-fill-mode:forwards;
+
+            
+       }
+         .animation>ul>img {
+           padding: 10px;
+       }
+ 
+
+       @keyframes moving1{
+            from {right: 0%; }
+            to {right: 400%; }
+       }
+
+       .animation2{
+        padding-top: 150px;
+        flex-grow: 1;
+            animation-name: moving2;
+            animation-duration: 1.5s;
+            animation-direction: alternate;
+            margin-left: 10vh;
+       }     
+
+
+       @keyframes moving2{
+            from {margin-top: 100%;}
+            to {margin-top: 0%;}
+        }
+        .animation3{
+            flex-grow: 1;
+            animation-name: moving2;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            margin-left: 10vh;
+       }     
+
+
+       @keyframes moving3{
+            from {margin-top: 100%;}
+            to {margin-top: 0%;}
+        }
         </style>
     </head>
     <body>
@@ -243,15 +304,27 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="/Test01/img/banner1.jpg" style="width: 100%; height: 660px;" alt="">
+        <div class="animation">
+            <ul >
+            <img src="/Test01/img/banner1.jpg" alt="" >       
+            <img src="/Test01/img/mainbanner2.png" alt="">
+            <img src="/Test01/img/mainbanner3.png"  alt="">
+            <img src="/Test01/img/mainbanner4.jpg"  alt="">
+            <img src="/Test01/img/mainbanner5.jpg"  alt="">
+            <img src="/Test01/img/banner1.jpg" alt="">
+            </ul>
         </div>
-        <div>
+        
+
+
+        <div class="animation2">
             <img src="/Test01/img/banner2.png" style="width: 100%; height: 660px;" alt="">
         </div>
-        <div>
+        <div class="animation3" > 
             <img src="/Test01/img/banner3.png" style="width: 100%; height: 660px;" alt="">
         </div>
+
+
 
         <footer>
             <div class="footer">

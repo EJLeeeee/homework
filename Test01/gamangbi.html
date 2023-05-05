@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>개설비용 </title>
 
     <!-- reset cdn -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         }
 
         body {
-            height: 150px;
+            height: 900px;
 
         }
 
@@ -117,114 +117,83 @@
         .one>.gnb>.menu>li>.submenu>li>a:hover {
             color: yellow;
         }
+        /* 메인 */
+        main{
+            /* border:1px solid gray; */
+                       
 
-        .login {
+        }
+        main>section{
+            /* border:1px solid gray; */
+        }
+        main>section:nth-child(1){
+            margin-top: 60px;
+        }
+        main>section:nth-child(1)>img{
+            width: 100vh;
+            height: 100vh;
+        }
+
+
+        main>section:nth-child(2){
+            height:800px;
             display: flex;
-            flex-direction: column;
-            /* justify-content: center; */
-            align-items: center;
-            height: 300px;
-            margin-top: 100px;
+            justify-content: center;
+            margin-left: 10vh;
 
         }
-
-        /* .login>.id {
-            
-             height: 45px; 
-             width: 1200px; 
-             border: 1px solid gray; 
-            width: 100%;
-            line-height: 1.2;
-            
-        }
-        .login>.id>input {
-            height: 45px;
-            width: 80%;
-            position: relative;
-            font-size: 1,2rem;
-            
-        }
-        .login>.pw {
-            
-             height: 45px; 
-             width: 1200px;
-             border: 0.5px solid gray; 
-            width: 100%;
-            line-height: 1.2;
-        }
-        .login>.pw>input {
-            height: 45px;
-            width: 80%;
-            border: 0.5px solid gray;
-            position: relative;
-            font-size: 1,2rem;
-         } */
-
-        .id,
-        .pw {
+        main>section:nth-child(2)>aside{
             margin: 10px;
-            width: 80%;
+            width:200px;
+            height: 50%;
+            
+
             
         }
-
-        input[type="text"] {
-            width: 97.5%;
+        .one--depth>li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid gray;
+            background-color: #ffffff;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+        .one--depth>li>a{
+            
+            display: block;
             padding: 10px;
-            border: 1px solid #ccc;
-            margin-left: 10px;
-            height: 30px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s;
         }
-
-        .login>.chk>input {
-            border-right:30px solid;
-            width:25px;
-            height:25px;      
-            display:inline-block;
-            margin: 15px;
-                   
-        }
-         input[type=checkbox] {
-            accent-color:#ffd141;
-            background-color: #ccc;
             
-        }
-        .chk>label {
-            display: inline-block;
-            font-size: 1.3rem;
-            margin: 15px;
-        }
-        .btn {
-            display: block;
-            width: 90%;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            color: white;
-            font-size: 1.2rem;
-            margin-left: 15px;
+        .one--depth>li>a:hover {
+            background-color: #FFD141;}
+
+
+
+        main>section:nth-child(2)>article{
+            flex-grow: 1;
+            animation-name: moving2;
+            animation-duration: 1.5s;
+            animation-direction: alternate;
+            margin-left: 10vh;
         }
 
-        .btn--primary {
-            background-color: rgb(28, 92, 57);
-            width: 78.5vw;
+        
+        @keyframes moving2{
+            from {margin-top: 100%;}
+            to {margin-top: 0%;}
         }
 
-        .container {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            width: 79vw;
-            font-size: 0.9rem;
-        }
-        .container>a {
-            display: block;
-            width: 150px;
-            margin-top: 10px;
-            color: gray;
-        }
-        .container>a:nth-child(2) {
-            text-align: right;
-        }
+
+
+
+
+
+
+
 
         footer {
     background-color: #ffd141;
@@ -335,27 +304,35 @@
             </ul>
         </nav>
     </div>
-    <div class="login">
-        <div class="id"><input type="text" value placeholder="이메일"></div>
-        <div class="pw"><input type="text" value placeholder="비밀번호"></div>
-        <div class="chk">
-            <input type="checkbox" id="check"><label for="check"> 로그인상태유지</label>
-            <a href="##" id="a1" class="btn btn--primary">로그인</a>
-        </div>
-        <div class="container">
-              <a href="" class="sign-in">회원가입</a>
-              <a href="" class="trouver">아이디 · 비밀번호 찾기</a>
-            </div>
-    </div>
+
+<!-- 메인 -->
+<main>
+    <section>
+        <article><img src="./img/1.png" alt=""></article>
+        </section>
+        
+    <section>
+        <aside class="one--depth">
+            <li>
+                <a href="">개설비용</a>
+                <a href="">인테리어</a>
+                <a href="">FAQ</a>
+                <a href="">가맹문의</a>
+                <a href="">개설절차</a></li></aside>
+        <article><hr color="#ffd141" ><img src="./img/gamang.jpg" alt=""></article>
+        </section>
 
 
-    <!-- <div style="height: 600px; width: 1135px; margin-right: 0px;">
-        <img src="./img/3c33583bc114a.jpg" alt="">
-    </div>
-    <div style="height: 600px;">
-        <img src="./img/4c2a38e3c1825.png" alt="">
-    </div>
-    <div style="height: 600px; background-color: rosybrown;"></div> -->
+</main>
+
+    
+
+
+
+
+
+
+
 </body>
 <footer>
     <div class="footer">
